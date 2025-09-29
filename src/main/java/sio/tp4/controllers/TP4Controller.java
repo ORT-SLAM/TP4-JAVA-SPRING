@@ -13,7 +13,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 @Component
-public class TP1Controller implements Initializable
+public class TP4Controller implements Initializable
 {
 
     Alert alert;

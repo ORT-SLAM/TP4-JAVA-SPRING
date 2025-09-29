@@ -73,7 +73,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>sio.devoir1sio1a/sio.tp4.TP1Application</mainClass>
+                            <mainClass>sio.devoir1sio1a/sio.tp4.TP4Application</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
