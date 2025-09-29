@@ -19,7 +19,6 @@ public class TP1Controller implements Initializable
 {
 
     Alert alert;
-
     @FXML
     private TableColumn tcNomSecteur;
     @FXML
