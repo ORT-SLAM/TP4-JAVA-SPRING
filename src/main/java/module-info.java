@@ -1,14 +1,4 @@
 open module sio.tp4 {
-//    requires javafx.controls;
-//    requires javafx.fxml;
-//    requires jakarta.persistence;
-//    requires org.hibernate.orm.core;
-//
-//    opens sio.tp4.entities;
-//    opens sio.tp4 to javafx.fxml;
-//    exports sio.tp4;
-//    opens sio.tp4.dto;
-
     requires javafx.controls;
     requires javafx.fxml;
     requires spring.boot;
@@ -19,6 +9,4 @@ open module sio.tp4 {
     requires jakarta.persistence;
     requires org.hibernate.orm.core;
     requires spring.data.commons;
-//    requires jakarta.transaction;
-//    requires spring.tx;
 }

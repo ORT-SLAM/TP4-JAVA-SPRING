@@ -1,5 +1,6 @@
 package sio.tp4.controllers;
 
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -7,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import org.springframework.stereotype.Component;
+import sio.tp4.services.EmployeService;
 
 
 import java.net.URL;
@@ -15,8 +17,6 @@ import java.util.ResourceBundle;
 @Component
 public class TP4Controller implements Initializable
 {
-
-    Alert alert;
     @FXML
     private TableColumn tcNomSecteur;
     @FXML
@@ -56,6 +56,14 @@ public class TP4Controller implements Initializable
     @FXML
     private TextField txtTotalSecteur;
 
+    // Utils
+    EmployeService employeService;
+    Alert alert;
+
+
+    public TP4Controller(EmployeService employeService) {
+        this.employeService = employeService;
+    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
@@ -77,6 +85,8 @@ public class TP4Controller implements Initializable
 
         tcNumeroEmployeAll.setCellValueFactory(new PropertyValueFactory<>("id"));
         tcNomEmployeAll.setCellValueFactory(new PropertyValueFactory<>("nomEmploye"));
+
+        tvEmployesAll.setItems(FXCollections.observableArrayList(employeService.getAllEmployees()));
     }
 
     @FXML
