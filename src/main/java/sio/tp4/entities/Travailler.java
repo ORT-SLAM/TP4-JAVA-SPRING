@@ -1,8 +1,5 @@
 package sio.tp4.entities;
 
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.MapsId;
-
 import jakarta.persistence.*;
 
 @Entity
