@@ -5,25 +5,27 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>sio</groupId>
-    <artifactId>TP1</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <name>TP1</name>
+    <artifactId>TP4</artifactId>
+    <version>1.0</version>
+    <name>TP4</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.10.2</junit.version>
+        <javaFx.version>21.0.5</javaFx.version>
+        <mysql.version>8.0.33</mysql.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>17.0.6</version>
+            <version>${javaFx.version}</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>17.0.6</version>
+            <version>${javaFx.version}</version>
         </dependency>
 
         <dependency>
@@ -37,6 +39,18 @@
             <artifactId>junit-jupiter-engine</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>3.4.4</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
@@ -57,10 +71,9 @@
                 <version>0.0.8</version>
                 <executions>
                     <execution>
-                        <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>sio.devoir1sio1a/sio.tp1.TP1Application</mainClass>
+                            <mainClass>sio.devoir1sio1a/sio.tp4.TP1Application</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

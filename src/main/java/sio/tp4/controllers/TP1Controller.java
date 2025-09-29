@@ -1,6 +1,5 @@
-package sio.tp1;
+package sio.tp4.controllers;
 
-import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.fxml.FXML;
@@ -11,7 +10,6 @@ import org.springframework.stereotype.Component;
 
 
 import java.net.URL;
-import java.time.LocalDate;
 import java.util.ResourceBundle;
 
 @Component

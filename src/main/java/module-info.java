@@ -1,13 +1,13 @@
-open module sio.tp1 {
+open module sio.tp4 {
 //    requires javafx.controls;
 //    requires javafx.fxml;
 //    requires jakarta.persistence;
 //    requires org.hibernate.orm.core;
 //
-//    opens sio.tp1.entities;
-//    opens sio.tp1 to javafx.fxml;
-//    exports sio.tp1;
-//    opens sio.tp1.dto;
+//    opens sio.tp4.entities;
+//    opens sio.tp4 to javafx.fxml;
+//    exports sio.tp4;
+//    opens sio.tp4.dto;
 
     requires javafx.controls;
     requires javafx.fxml;

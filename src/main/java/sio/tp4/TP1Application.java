@@ -1,4 +1,4 @@
-package sio.tp1;
+package sio.tp4;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,9 +11,9 @@ public class TP1Application extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(TP1Application.class.getResource("tp1-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(TP1Application.class.getResource("tp4-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("TP1");
+        stage.setTitle("TP4 - SpringBoot");
         stage.setScene(scene);
         stage.show();
     }
